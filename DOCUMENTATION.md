@@ -8,7 +8,7 @@ Este projeto é uma **galeria interativa** que apresenta trabalhos realizados co
 
 ### 🔍 Sistema de Busca
 - **Busca em tempo real**: Digite qualquer termo para filtrar trabalhos instantaneamente
-- **Busca abrangente**: A busca procura em títulos, descrições, tags e ferramenenta de IA utilizada
+- **Busca abrangente**: A busca procura em títulos, descrições, tags e ferramenta de IA utilizada
 - **Interface responsiva**: Funciona perfeitamente em desktops, tablets e smartphones
 
 ### 🏷️ Sistema de Filtros
