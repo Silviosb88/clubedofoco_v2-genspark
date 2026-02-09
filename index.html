@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube do Foco - Galeria de Trabalhos com IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎨 Clube do Foco</h1>
+            <p class="subtitle">Galeria Interativa de Trabalhos com IA</p>
+            <p class="tagline">Construído com Genspark e Copilot</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#galeria" class="active">Galeria</a></li>
+                <li><a href="#documentacao">Documentação</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Gallery Section -->
+        <section id="galeria" class="section active">
+            <div class="controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="🔍 Buscar trabalhos...">
+                </div>
+                <div class="filters">
+                    <select id="categoryFilter">
+                        <option value="all">Todas as Categorias</option>
+                        <option value="imagem">Geração de Imagem</option>
+                        <option value="texto">Processamento de Texto</option>
+                        <option value="audio">Geração de Áudio</option>
+                        <option value="video">Geração de Vídeo</option>
+                        <option value="codigo">Geração de Código</option>
+                    </select>
+                    <select id="sortFilter">
+                        <option value="recent">Mais Recentes</option>
+                        <option value="oldest">Mais Antigos</option>
+                        <option value="name">Nome (A-Z)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="stats">
+                <span id="resultsCount">0 trabalhos encontrados</span>
+            </div>
+
+            <div id="gallery" class="gallery"></div>
+        </section>
+
+        <!-- Documentation Section -->
+        <section id="documentacao" class="section">
+            <h2>📚 Documentação</h2>
+            
+            <div class="doc-section">
+                <h3>Sobre o Projeto</h3>
+                <p>O Clube do Foco é uma galeria interativa que apresenta trabalhos realizados com Inteligência Artificial. Este projeto foi desenvolvido através da colaboração entre Genspark e GitHub Copilot, demonstrando o poder da sinergia entre diferentes ferramentas de IA.</p>
+            </div>
+
+            <div class="doc-section">
+                <h3>Funcionalidades</h3>
+                <ul>
+                    <li><strong>Busca Inteligente:</strong> Sistema de busca em tempo real que procura em títulos, descrições e tags</li>
+                    <li><strong>Filtros Avançados:</strong> Filtre por categoria (imagem, texto, áudio, vídeo, código) e ordene por data ou nome</li>
+                    <li><strong>Interface Responsiva:</strong> Design adaptável para desktop, tablet e mobile</li>
+                    <li><strong>Visualização Detalhada:</strong> Cards informativos com todos os detalhes do trabalho</li>
+                </ul>
+            </div>
+
+            <div class="doc-section">
+                <h3>Categorias de Trabalhos</h3>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <h4>🖼️ Geração de Imagem</h4>
+                        <p>Criação de imagens com DALL-E, Midjourney, Stable Diffusion e outras ferramentas</p>
+                    </div>
+                    <div class="category-card">
+                        <h4>📝 Processamento de Texto</h4>
+                        <p>Geração de conteúdo, resumos, traduções com GPT-4, Claude e outros modelos</p>
+                    </div>
+                    <div class="category-card">
+                        <h4>🎵 Geração de Áudio</h4>
+                        <p>Criação de música, vozes e efeitos sonoros com IA</p>
+                    </div>
+                    <div class="category-card">
+                        <h4>🎬 Geração de Vídeo</h4>
+                        <p>Produção de vídeos com Runway, Pika e outras ferramentas</p>
+                    </div>
+                    <div class="category-card">
+                        <h4>💻 Geração de Código</h4>
+                        <p>Desenvolvimento assistido por IA com Copilot, Cursor e outros</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="doc-section">
+                <h3>Como Usar</h3>
+                <ol>
+                    <li><strong>Navegue pela Galeria:</strong> Explore todos os trabalhos na página principal</li>
+                    <li><strong>Use a Busca:</strong> Digite palavras-chave para encontrar trabalhos específicos</li>
+                    <li><strong>Aplique Filtros:</strong> Use os filtros de categoria e ordenação para refinar os resultados</li>
+                    <li><strong>Visualize Detalhes:</strong> Clique nos cards para ver mais informações sobre cada trabalho</li>
+                </ol>
+            </div>
+
+            <div class="doc-section">
+                <h3>Tecnologias Utilizadas</h3>
+                <ul>
+                    <li><strong>Genspark:</strong> IA generativa para desenvolvimento</li>
+                    <li><strong>GitHub Copilot:</strong> Assistente de código com IA</li>
+                    <li><strong>HTML5, CSS3, JavaScript:</strong> Tecnologias web modernas</li>
+                    <li><strong>Design Responsivo:</strong> Mobile-first approach</li>
+                </ul>
+            </div>
+
+            <div class="doc-section">
+                <h3>Contribuindo</h3>
+                <p>Este é um projeto colaborativo. Para adicionar novos trabalhos à galeria, edite o arquivo <code>data.js</code> e adicione uma nova entrada no array de trabalhos seguindo a estrutura existente.</p>
+                <pre><code>{
+    id: 1,
+    title: "Título do Trabalho",
+    description: "Descrição detalhada",
+    category: "imagem",
+    date: "2024-01-01",
+    tags: ["tag1", "tag2"],
+    author: "Nome do Autor",
+    tool: "Ferramenta Utilizada"
+}</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clube do Foco - Galeria de Trabalhos com IA</p>
+            <p>Desenvolvido com ❤️ usando Genspark e GitHub Copilot</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
