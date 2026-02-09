@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube do Foco - Galeria de Trabalhos com IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🤖 Clube do Foco - Galeria IA</h1>
+            <p class="subtitle">Uma coleção interativa de trabalhos realizados com Inteligência Artificial</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Search and Filter Section -->
+        <section class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Buscar trabalhos..." aria-label="Buscar trabalhos">
+            </div>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="text">Texto</button>
+                <button class="filter-btn" data-filter="image">Imagem</button>
+                <button class="filter-btn" data-filter="code">Código</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="data">Dados</button>
+            </div>
+        </section>
+
+        <!-- Results Counter -->
+        <div class="results-info">
+            <span id="resultsCount">0</span> trabalhos encontrados
+        </div>
+
+        <!-- Gallery Grid -->
+        <section class="gallery" id="gallery">
+            <!-- Gallery items will be dynamically loaded here -->
+        </section>
+
+        <!-- No Results Message -->
+        <div class="no-results" id="noResults" style="display: none;">
+            <p>😕 Nenhum trabalho encontrado com os filtros aplicados.</p>
+            <button onclick="resetFilters()" class="btn-reset">Limpar Filtros</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Construído com ajuda do <strong>Genspark</strong> e <strong>Copilot</strong> | 
+            <a href="DOCUMENTATION.md" target="_blank">📚 Documentação</a></p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
